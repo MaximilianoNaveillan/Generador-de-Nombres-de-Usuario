@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8" />
+    <!-- Hace que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Generador de nombres de usuario - Bootstrap 4</title>
+
+    <!-- Bootstrap 4 CSS desde CDN oficial (jsDelivr) -->
+    <!-- Versión 4.6.2 que es estable y compatible -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal con clases de Bootstrap para centrado y espaciado -->
+    <div class="container mt-5 pt-5">
+      <!-- Fila principal para centrar la card -->
+      <div class="row justify-content-center">
+        <!-- Columna que ocupa hasta 6 columnas en desktop (máx. ancho centrado) -->
+        <div class="col-md-6 col-lg-5">
+          <!-- Card principal con Bootstrap 4 -->
+          <div class="card shadow-lg border-primary">
+            <!-- Header de la card con título -->
+            <div class="card-header bg-primary text-white text-center">
+              <h3 class="mb-0">🎯 Generador de Usuario</h3>
+            </div>
+
+            <!-- Body de la card con el contenido principal -->
+            <div class="card-body text-center py-5">
+              <!-- Botón grande con clases Bootstrap 4: primary (azul), large -->
+              <!-- id="btn-generar" para capturarlo desde JavaScript -->
+              <button id="btn-generar" class="btn btn-primary btn-lg mb-4 px-5">
+                Generar usuario nuevo
+              </button>
+
+              <!-- Contenedor del resultado con clases para mejor visualización -->
+              <!-- id="resultado" para actualizar desde JavaScript -->
+              <div id="resultado" class="resultado-vacio">
+                <p class="lead text-muted mb-0">
+                  Presiona el botón para generar tu primer nombre de usuario
+                </p>
+              </div>
+            </div>
+
+            <!-- Footer de la card con información adicional -->
+            <div class="card-footer bg-light text-muted text-center">
+              <small> Ejemplos: juan perez • martina soto • carlo sdiaz </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 4 JS Bundle (incluye Popper.js para tooltips/popovers si se usan) -->
+    <!-- jQuery ya incluido en el bundle para Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Nuestro archivo JavaScript personalizado (va al final para cargar DOM primero) -->
+    <script src="script.js"></script>
+  </body>
+</html>
